@@ -2,10 +2,11 @@
   "name": "socolow-nextjs",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ssocolow.github.io/socolowsitebuilders/",
+  "homepage": "https://socolowsitebuilders.com",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:gh-pages": "NODE_ENV=production next build",
     "start": "next start",
     "lint": "next lint",
     "deploy": "gh-pages -d out"
