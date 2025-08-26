@@ -212,6 +212,38 @@ body {
   margin-top: 3rem;
 }
 
+.portfolio {
+  padding: 6rem 2rem;
+  background: #f9fafb;
+}
+
+.portfolio-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.portfolio-card {
+  display: inline-block;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.2);
+}
+
+.portfolio-image {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 24px;
+}
+
 .step {
   text-align: center;
   padding: 2rem;
