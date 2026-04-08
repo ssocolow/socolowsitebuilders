@@ -40,8 +40,8 @@ export default function Contact() {
           <button
             onClick={() => setShowPricing(true)}
             className="cta-button"
-            style={{ 
-              fontSize: '1rem', 
+            style={{
+              fontSize: '1rem',
               padding: '1rem 2.5rem',
               background: 'rgba(255,255,255,0.1)',
               border: '1px solid rgba(255,255,255,0.3)'
@@ -56,8 +56,8 @@ export default function Contact() {
       {showPricing && (
         <div className="modal-overlay" onClick={() => setShowPricing(false)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button 
-              className="modal-close" 
+            <button
+              className="modal-close"
               onClick={() => setShowPricing(false)}
             >
               ×
@@ -67,27 +67,34 @@ export default function Contact() {
               <div className="pricing-item">
                 <h3>Tier 1</h3>
                 <p className="price">$400</p>
-                <p style={{ fontSize: '1.2rem', fontWeight: 'bold', lineHeight: '1.5' }}>We make the website, pay for two years of the domain, and give you full ownership.</p>
+                <p style={{ fontSize: '1.2rem', fontWeight: 'bold', lineHeight: '1.5' }}>We make the website and give you full ownership.</p>
               </div>
-              
+
               <div className="pricing-item featured">
                 <h3>Tier 2</h3>
                 <p className="price">$500</p>
-                <p style={{ fontSize: '1.2rem', fontWeight: 'bold', lineHeight: '1.5' }}>After the final website version is delivered as in Tier 1, three future edits are included (additional pictures, new pages, etc).</p>
+                <p style={{ fontSize: '1.2rem', fontWeight: 'bold', lineHeight: '1.5' }}>After the final website version is delivered as in Tier 1, two future edits are included (additional pictures, new pages, etc).</p>
               </div>
-              
+
+              <div className="pricing-item featured">
+                <h3>Domain Management</h3>
+                <p className="price">$50/yr</p>
+                <p style={{ fontSize: '1.2rem', fontWeight: 'bold', lineHeight: '1.5', marginBottom: '0.5rem' }}>We manage your domain and its renewal for you.</p>
+                <p style={{ fontSize: '0.8rem' }}>Subject to change based on domain renewal price.</p>
+              </div>
+
               <div className="pricing-item">
                 <h3>Website Updating</h3>
                 <p className="price">Varies</p>
                 <p style={{ fontSize: '1.2rem', fontWeight: 'bold', lineHeight: '1.5' }}>If you already have a site and want it updated/improved, we can do it! Pricing will vary depending on difficulty.</p>
               </div>
             </div>
-            
+
             <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-              <a 
-                href="https://forms.gle/kaguvcaoUPF1fDnX7" 
+              <a
+                href="https://forms.gle/kaguvcaoUPF1fDnX7"
                 className="cta-button"
-                style={{ 
+                style={{
                   marginTop: '1rem',
                   background: '#667eea',
                   color: 'white',
